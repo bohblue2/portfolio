@@ -1,0 +1,13 @@
+[TELEGRAM]
+token = 959816969:AAEdGRlztKpMKU-EeGBEEqfVIh_gKnxCcrE
+chat_id = -1001452783544
+
+[DATABASE]
+host = WgDn4Acltt1yrxwCMzXQg+vDuXKO6CB7gAskNO9txgWL/gpvpIbCdO9dacQlAfsDEUnb2DqWzZRp/UIOWIn1ZN1cCu6u/ra+9GRbFEx1elpA48pdi/40yLx7f6g0acoN
+port = dwqaKkFwjCJS+XBlfBp+SDmqbFGZV971TnMRMscWblc=
+user = SMkhHmcZ62Azvixk/zmENPoVwxsJXyCBiQvzNNGDn7E=
+password = vr73q1fSqiG9i2bqVO0+SRwdZNvd6VuBFsLSQKtdo1k=
+db = sCW1PjXcG1KpX9xePHqpovYPj6+NY6JQta/huIG0P00=
+
+[AES]
+key_path = C:\\config\\aeskey.txt

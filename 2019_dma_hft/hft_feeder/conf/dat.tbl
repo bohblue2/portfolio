@@ -1,0 +1,37 @@
+#[ENV_SECTION] - 환경변수 설정부분
+# 환경변수는 30개로 제한합니다.
+#[DEFAULT_SECTION] - Default value
+#DEF_DIR     :
+#DEF_CNT     : 10 Process 재가동 제한 횟수
+#[PROCESS_SECTION]
+#:ID:START_TIME:END_TIME:RUN_MODE:COMMAND_LINE:COMMENT
+#  ID : Process ID => 이름이 아닌 식별자 6자 이내
+#  START_TIME,END_TIME : 시작시각, 종료시각
+#  RUN_MODE            : WAIT|FOREVER|ONCE
+#   -. WAIT    : 이전의 Processor가 수행이 끝나면 수행.(추후지원)
+#   -. FOREVER : 시간내에서 항상수행 , 만일 비정상 종료하면 다시수행.
+#   -. ONCE    : 시스템 가동시 한번 수행한다. (시간의 의미는 없슴)
+#   % WAIT MODE is not implements.
+#  COMMAND_LINE        : 실행인자들 복수일 경우 SPACE로 구분한다.
+#   ex) ------:test 1 32676:test program이 인자를 "test 1 32767"로 수행
+#  COMMENT             : Process 주석
+#   -. Process, ENV_SECTION 주석이외는 한 Line 주석만을 허용한다.
+#   -. Line주석은 맨처음 칸에 "#"표시를 한다.
+#
+[VERSION]
+Ver 0.01
+[ENV_SECTION]
+OD_HOME=/home/dat/conf
+[DEFAULT_SECTION]
+DEF_DIR     :/home/dat:
+DEF_CNT     :99:
+[PROCESS_SECTION]
+:NSPY:000010:235950:FOREVER:bin/netspyd:Network spy deamon
+:STKF:000030:235930:FOREVER:bin/stk F:AP
+:STKG:000030:235930:FOREVER:bin/stk G:AP
+:STKH:000030:235930:FOREVER:bin/stk H:AP
+:STKI:000030:235930:FOREVER:bin/stk I:AP
+:STKK:000030:235930:FOREVER:bin/stk K:AP
+:FUTA:000030:235930:FOREVER:bin/fut A:AP
+:OPTC:000030:235930:FOREVER:bin/opt C:AP
+:OPTI:000030:235930:FOREVER:bin/opt I:AP 

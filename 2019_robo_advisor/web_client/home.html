@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RR Client</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <!--script-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/jquery.simpler-sidebar.min.js"></script>
+    <script src="js/home.js"></script>
+</head>
+<body>
+
+<!--navbar-->
+<div id="navbar">
+    <span id="title">RR Client</span>
+    <span id="toggle-sidebar" class="button icon">MENU</span>
+</div>
+
+<!--side bar-->
+<div id="sidebar">
+    <div id="sidebar-wrapper" class="sidebar-wrapper">
+        <div>* HOST</div>
+        <input id="host" type="text" autocomplete="off" value="ws://localhost:8765"/>
+        <p id="copyright">&copy; 2019 hansang.cho<p>
+    </div>
+</div>
+
+<!--main-->
+<div id="log"></div>
+<form id="form">
+    <input type="button" value="Connect" onclick="connectServer()"/>
+    <input type="text" id="msg" autocomplete="off"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[KIWOOM]
+pass = your_pass (aes256 encrypted)
+cert_pass = your_cert_pass (aes256 encrypted)
+
+[TELEGRAM]
+token = your_token
+chat_id = your_chat_id
+
+[DATABASE]
+host = your_host (aes256 encrypted)
+port = your_port (aes256 encrypted)
+user = your_user (aes256 encrypted)
+password = your_password (aes256 encrypted)
+db = your_db (aes256 encrypted)
+
+[AES]
+key_path = C:\\config\\aeskey.txt (your aeskey file path)
+
+[ACCOUNT_NUM]
+hrp_neutral = your account number
+hrp_stable = your account number
+hrp_active = your account number

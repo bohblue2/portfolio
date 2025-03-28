@@ -1,0 +1,10 @@
+config.ini
+aeskey.txt
+.idea/
+__pycache__/
+*.log
+*.ini
+.DS_Store
+build/
+dist/
+datrobo.egg-info/
