@@ -1,0 +1,9 @@
+startup.sh
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+.dev.env
+.prod.env
+
+__pycache__
